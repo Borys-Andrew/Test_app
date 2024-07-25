@@ -1,0 +1,47 @@
+.side-menu {
+  display: flex;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--secondary-color);
+  margin-right: 12px;
+
+  @media (min-width: 768px) {
+    &:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 30px;
+      background-color: var(--secondary-color);
+      margin-left: 12px;
+    }
+  }
+}
+
+.btn-exit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  border: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+  cursor: pointer;
+  &__text{
+    display: none;
+    @media (min-width: 320px) {
+      display: block;
+    }
+  }
+}
