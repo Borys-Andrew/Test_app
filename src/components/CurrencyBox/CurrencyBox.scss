@@ -1,8 +1,11 @@
 .currency-container {
+  margin: 0 auto;
   max-width: 395px;
-  border-radius: 20px;
   color: #ffffff;
-  overflow: hidden;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .header-list {
@@ -11,10 +14,12 @@
   gap: 15px;
   padding: 11px 17px 12px 20px;
   background-color: #6e78e8;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   font-family: 'Circe';
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 
   @media (min-width: 768px) {
@@ -32,11 +37,16 @@
   flex-direction: column;
   gap: 20px;
   padding: 12px 20px 16px 20px;
+  min-height: 120px;
+
   background-color: #4a56e2;
   background-image: url('../../assets/currency-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center calc(100% + 30px);
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   font-family: 'Circe';
   font-weight: 400;

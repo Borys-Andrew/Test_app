@@ -1,6 +1,13 @@
+export interface Curr {
+  ccy: string;
+  buy: number;
+  sale: number;
+}
+
 export interface Currency {
-  id: string;
-  currency: string;
-  purchase: string;
-  sale: string;
+  currencyCodeA: number;
+  currencyCodeB: number;
+  date: number;
+  rateBuy: number;
+  rateSell: number;
 }
