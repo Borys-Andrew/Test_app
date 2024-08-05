@@ -9,9 +9,9 @@ export const CurrencyPage: React.FC = () => {
     (state: RootState) => state.currency,
   );
 
-  console.log('currenciesList:', currenciesList);
-  console.log('isLoading:', isLoading);
-  console.log('hasError:', hasError);
+  // console.log('currenciesList:', currenciesList);
+  // console.log('isLoading:', isLoading);
+  // console.log('hasError:', hasError);
 
   return (
     <div>

@@ -7,7 +7,7 @@ import { StatisticsPage } from 'Pages/StatisticsPage';
 import { CurrencyPage } from 'Pages/CurrencyPage/CurrencyPage';
 import { NotFoundPage } from 'Pages/NotFoundPage';
 import { LoginPage } from 'Pages/LoginPage';
-import { RegisterPage } from 'Pages/RegisterPage';
+import { SingUpPage } from 'Pages/SingUpPage';
 import './App.scss';
 import 'normalize.css';
 
@@ -20,7 +20,7 @@ export const App: React.FC = () => {
       <Navigation />
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/register" element={<SingUpPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/statistics" element={<StatisticsPage />} />
         <Route path="/currency" element={<CurrencyPage />} />
